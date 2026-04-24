@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfólio profissional - Estudante de Desenvolvimento de Sistemas">
+<meta name="keywords" content="desenvolvedor, programação, frontend, portfolio, sistemas">
+<meta property="og:title" content="Dev Portfolio | Desenvolvimento de Sistemas">
+<meta property="og:description" content="Transformando ideias em código e código em soluções reais.">
+<title>Portfolio | Ayller Oliveira</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+<div class="cursor-dot" id="cursor-dot"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">Ayller<span>.</span>Oliveira</div>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponível para oportunidades
+      </div>
+
+      <h1 class="hero-name">
+        Ayller <span class="accent">Oliveira</span>
+      </h1>
+
+      <div class="hero-typing">
+        &gt; <span class="typed" id="typed-text"></span><span class="cursor-blink">_</span>
+      </div>
+
+      <p class="hero-tagline">
+        Desenvolvedor Fullstack em formação com foco em JavaScript, criando aplicações modernas e código bem estruturado.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Tecnologias</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Anos Estudando</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar agora fica EMBAIXO -->
+    <div class="hero-visual float">
+      <div class="avatar-container">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring-2"></div>
+        <div class="avatar-img">👨‍💻</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-label">// sobre mim</div>
+        <h2 class="section-title">Quem está<br>por trás do código</h2>
+        <p>Tenho <strong>17 anos</strong> e sou estudante do ensino médio técnico em <strong>Desenvolvimento de Sistemas</strong>. Minha jornada com programação começou por curiosidade e virou paixão — hoje é minha principal vocação.</p>
+        <p>Acredito que <strong>tecnologia é uma ferramenta de transformação</strong>. Cada linha de código que escrevo é uma oportunidade de resolver um problema real, facilitar uma vida ou criar algo que antes só existia na imaginação.</p>
+        <p>Meu objetivo é me tornar um <strong>Engenheiro de Software</strong> de referência, contribuir para produtos que impactem milhões de pessoas e, no futuro, criar minha própria empresa de tecnologia.</p>
+        <div class="soft-skills">
+          <div class="skill-chip"><span class="icon">🎯</span> Foco Total</div>
+          <div class="skill-chip"><span class="icon">⚡</span> Aprendizado Rápido</div>
+          <div class="skill-chip"><span class="icon">🧩</span> Pensamento Lógico</div>
+          <div class="skill-chip"><span class="icon">🔥</span> Disciplina</div>
+          <div class="skill-chip"><span class="icon">🤝</span> Trabalho em Equipe</div>
+          <div class="skill-chip"><span class="icon">🚀</span> Mentalidade de Crescimento</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">// habilidades técnicas</div>
+      <h2 class="section-title">Meu Arsenal<br>de Tecnologias</h2>
+      <p class="section-subtitle">Conjunto de ferramentas que domino e uso para construir soluções reais, do frontend ao backend.</p>
+    </div>
+    <div class="skills-categories">
+      <div class="skill-card reveal" style="transition-delay: 0.1s">
+        <div class="skill-card-title">Frontend</div>
+        <div class="skill-bar-group">
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">🌐 HTML5</div>
+              <div class="skill-bar-pct">90%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">🎨 CSS3</div>
+              <div class="skill-bar-pct">85%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">⚡ JavaScript</div>
+              <div class="skill-bar-pct">75%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">✏️ UI/UX Básico</div>
+              <div class="skill-bar-pct">65%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="65"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay: 0.2s">
+        <div class="skill-card-title" style="color: var(--red)">Backend</div>
+        <div class="skill-bar-group">
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">🐍 Python</div>
+              <div class="skill-bar-pct">80%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill red" data-w="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">🔷 C#</div>
+              <div class="skill-bar-pct">65%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill red" data-w="65"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">🗄️ MySQL</div>
+              <div class="skill-bar-pct">70%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill red" data-w="70"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">🧠 Lógica de Programação</div>
+              <div class="skill-bar-pct">88%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill red" data-w="88"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay: 0.3s; grid-column: 1 / -1">
+        <div class="skill-card-title">Ferramentas & Outros</div>
+        <div class="skill-bar-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">🔧 Git & GitHub</div>
+              <div class="skill-bar-pct">75%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <div class="skill-bar-name">💻 VS Code</div>
+              <div class="skill-bar-pct">90%</div>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="90"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="section-label">// contato</div>
+        <h2 class="section-title">Vamos<br>conversar?</h2>
+        <p>Estou aberto a oportunidades de estágio, freelas, colaborações e projetos desafiadores. Se você tem algo interessante, me manda uma mensagem!</p>
+        <div class="social-links">
+          <a href="https://github.com/Ayller" target="_blank" class="social-link">
+            <div class="s-icon">🐱</div>
+            <div>
+              <div class="s-name">GitHub</div>
+              <span class="s-handle">@Ayller</span>
+            </div>
+            <span class="s-arrow">→</span>
+          </a>
+
+          <a href="mailto:ayller7@gmail.com" class="social-link">
+            <div class="s-icon">✉️</div>
+            <div>
+              <div class="s-name">Email</div>
+              <span class="s-handle">ayller7@gmail.com</span>
+            </div>
+            <span class="s-arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay: 0.2s">
+        <div class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-input" id="f-name" placeholder="Seu nome completo">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" id="f-email" placeholder="seuemail@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Assunto</label>
+            <input type="text" class="form-input" id="f-subject" placeholder="Sobre o que você quer falar?">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mensagem</label>
+            <textarea class="form-textarea" id="f-msg" placeholder="Conte mais sobre a oportunidade ou projeto..."></textarea>
+          </div>
+          <button class="form-submit" onclick="handleSubmit()">Enviar Mensagem ↗</button>
+          <div class="form-msg" id="form-msg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy">
+    © 2026 Ayller<span> Oliveira</span>
+  </div>
+  <a href="#hero" class="footer-back">↑ Voltar ao topo</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
