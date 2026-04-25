@@ -119,22 +119,6 @@ document.querySelectorAll('.skill-card').forEach(card => {
   }, { threshold: 0.3 }).observe(card);
 });
 
-/* ---- Project Filter ---- */
-document.querySelectorAll('.filter-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-    const filter = tab.dataset.filter;
-    document.querySelectorAll('.project-card[data-tags]').forEach(card => {
-      if (filter === 'all' || card.dataset.tags.includes(filter)) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-  });
-});
-
 /* ---- Form ---- */
 function handleSubmit() {
   const name = document.getElementById('f-name').value.trim();
